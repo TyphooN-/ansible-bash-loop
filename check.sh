@@ -6,8 +6,6 @@ read inventory
 echo "Running checks for the following hosts:"
 cat $inventory | grep -iv "contract" | awk '{print $1}'
 
-./check_dashboard.py $inventory
-
 while read -r playbook test
 do
 ansible-playbook -i $inventory $playbook --check > ./tmp/ntp
