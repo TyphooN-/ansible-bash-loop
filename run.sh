@@ -4,7 +4,7 @@ echo "Enter the inventory filename:"
 read inventory
 
 echo "Running checks for the following hosts:"
-cat $inventory  awk '{print $1}'
+cat $inventory | awk '{print $1}'
 
 ./check_dashboard.py $inventory
 
