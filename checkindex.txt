@@ -1,0 +1,10 @@
+timezone.yml    Timezone
+ossec.yml       OSSEC
+hosts.yml       /etc/hosts
+resolv.yml      /etc/resolv.conf
+clamav.yml      clamav
+snmpd.yml       snmpd
+ldap.yml        LDAP
+kickstart.yml   Kickstart
+yum.yml         YUM
+ntp.yml         NTP
